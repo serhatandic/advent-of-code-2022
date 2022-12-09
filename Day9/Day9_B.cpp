@@ -39,10 +39,7 @@ int myFunc (vector<string> inp){
     for (int i = 0; i < 10; i++){
         knotsArray.push_back(origin);
     }    
-
-    bool left = true, right = true, down = true, up = true;
-    string prevDirection;
-
+    
     for (int i = 0; i < inp.size(); i++){
         direction = inp[i][0];
         numOfSteps = stoi(inp[i].substr(2, inp[i].size() -2));
